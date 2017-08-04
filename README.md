@@ -2,20 +2,18 @@
 
 Lein test works just fine.
 
-```bash
+```
 $ lein test
 
 lein test foo-test
 
 Ran 1 tests containing 1 assertions.
 0 failures, 0 errors.
-
-$ lein test-refresh
 ```
 
 Lein test-refresh fails:
 
-```bash
+```
 $ lein test-refresh
 Exception in thread "main" java.lang.AssertionError: Assert failed: (dep-spec? dep-spec)
 	at leinjacker.deps$dep_name.invokeStatic(deps.clj:23)
@@ -78,7 +76,7 @@ to regular:
 
 then test-refresh works again:
 
-```bash
+```
 $ lein test-refresh
 *********************************************
 *************** Running tests ***************
